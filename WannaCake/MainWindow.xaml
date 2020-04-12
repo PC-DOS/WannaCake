@@ -1,0 +1,49 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="WannaCake - 解除蛋糕锁定" Height="500" Width="750" MinWidth="650" MinHeight="350" Icon="Assets/coin_only.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="imgHeaderImage" Grid.Column="0" Margin="10,10,0,10" Source="Assets/Img1.png"/>
+            <TextBox x:Name="txtText" Grid.Column="1" Margin="10" IsReadOnly="True" IsReadOnlyCaretVisible="True" VerticalScrollBarVisibility="Visible" Text="我的蛋糕出了什么问题？&#xA;您的一部分蛋糕被我拿走了。&#xA;奶油蛋糕，巧克力蛋糕，水果大概，黄蛋糕……几乎所有的蛋糕都被我拿走了，因此您没有蛋糕吃了。&#xA;您大可在网上或者面包店再买些蛋糕，但是我保证，没有我的许可，就算 Lauren·Faust 来了，您也吃不到蛋糕。&#xA;&#xA;有没有让我吃到蛋糕的方法？&#xA;有让您吃到蛋糕的方法，但是需要我的批准，但是这是收费的，也不能无限期地等待。&#xA;&#xA;怎么恢复我的蛋糕？&#xA;我们使用 CakeCoin 技术来接收款项，如果您不熟悉如何获取和使用 CakeCoin，请参考 idtp://cakecoin.celestia.ryl.eq/ 网站上的简介。&#xD;&#xA;&#xD;&#xA;如何付款？&#xD;&#xA;请向 [收付地址] 中显示的 CakeCoin 地址支付 1000 个以上的 CakeCoins，然后我会通过魔法将解锁密钥发送到您府上。请注意，不要试图搞什么小花样，乱输解锁密钥或者强制关闭这个程序会导致您收到我签发的月球单程票一份。" TextAlignment="Justify" TextWrapping="Wrap"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="175"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="imgBottomLeft" Grid.Column="0" Margin="10" Source="Assets/coin.png"/>
+            <Image x:Name="imgBottomRight" Grid.Column="2" Margin="10" Source="Assets/Img3.png"/>
+            <Grid Grid.Column="1" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="txtComputerIDCaption" Grid.Row="0" Grid.Column="0" Text="身份代号: " VerticalAlignment="Center" Margin="0,0,0,5"/>
+                <TextBox x:Name="txtComputerID" Grid.Row="0" Grid.Column="1" Text="" IsReadOnly="True" IsReadOnlyCaretVisible="True" Margin="5,0,5,5" />
+                <Button x:Name="btnCopyComputerID" Grid.Row="0" Grid.Column="2" Content="复制(_C)" Margin="0,0,0,5" Padding="10,1" />
+                <TextBlock x:Name="txtUnlockKeyCaption" Grid.Row="1" Grid.Column="0" Text="解锁密钥: " VerticalAlignment="Center" Margin="0,0,0,5"/>
+                <TextBox x:Name="txtUnlockKey" Grid.Row="1" Grid.Column="1" Text="" IsReadOnly="False" IsReadOnlyCaretVisible="True" Margin="5,0,5,5" />
+                <Button x:Name="btnUnlock" Grid.Row="1" Grid.Column="2" Content="解锁(_U)" Margin="0,0,0,5" Padding="10,1" />
+                <TextBlock x:Name="txtAddressCaption" Grid.Row="2" Grid.Column="0" Text="收付地址: " VerticalAlignment="Center" Margin="0,0,0,5"/>
+                <TextBox x:Name="txtAddress" Grid.Row="2" Grid.Column="1" Text="" IsReadOnly="True" IsReadOnlyCaretVisible="True" Margin="5,0,5,5"/>
+                <Button x:Name="btnCopyAddress" Grid.Row="2" Grid.Column="2" Content="复制(_P)" Margin="0,0,0,5" Padding="10,1" />
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
