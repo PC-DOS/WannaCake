@@ -13,7 +13,7 @@
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
             <Image x:Name="imgHeaderImage" Grid.Column="0" Margin="10,10,0,10" Source="Assets/Img1.png"/>
-            <TextBox x:Name="txtText" Grid.Column="1" Margin="10" IsReadOnly="True" IsReadOnlyCaretVisible="True" VerticalScrollBarVisibility="Visible" Text="我的蛋糕出了什么问题？&#xA;您的一部分蛋糕被我拿走了。&#xA;奶油蛋糕，巧克力蛋糕，水果大概，黄蛋糕……几乎所有的蛋糕都被我拿走了，因此您没有蛋糕吃了。&#xA;您大可在网上或者面包店再买些蛋糕，但是我保证，没有我的许可，就算 Lauren·Faust 来了，您也吃不到蛋糕。&#xA;&#xA;有没有让我吃到蛋糕的方法？&#xA;有让您吃到蛋糕的方法，但是需要我的批准，但是这是收费的，也不能无限期地等待。&#xA;&#xA;怎么恢复我的蛋糕？&#xA;我们使用 CakeCoin 技术来接收款项，如果您不熟悉如何获取和使用 CakeCoin，请参考 idtp://cakecoin.celestia.ryl.eq/ 网站上的简介。&#xD;&#xA;&#xD;&#xA;如何付款？&#xD;&#xA;请向 [收付地址] 中显示的 CakeCoin 地址支付 1000 个以上的 CakeCoins，然后我会通过魔法将解锁密钥发送到您府上。请注意，不要试图搞什么小花样，乱输解锁密钥或者强制关闭这个程序会导致您收到我签发的月球单程票一份。" TextAlignment="Justify" TextWrapping="Wrap"/>
+            <TextBox x:Name="txtText" Grid.Column="1" Margin="10" IsReadOnly="True" IsReadOnlyCaretVisible="True" VerticalScrollBarVisibility="Visible" Text="我的蛋糕出了什么问题？&#xA;您的一部分蛋糕被我拿走了。&#xA;奶油蛋糕，巧克力蛋糕，水果蛋糕，纸杯蛋糕，黄蛋糕……几乎所有类型的蛋糕都被我拿走了，因此您没有蛋糕吃了。&#xA;您大可在网上或者面包店再买些蛋糕，但是我保证，没有我的许可，就算是 Lauren·Faust 来了，您也吃不到蛋糕。&#xA;&#xA;有没有让我吃到蛋糕的方法？&#xA;有让您吃到蛋糕的方法，但是需要我的批准，但是这是收费的，也不能无限期地等待。如果您在 3 天之内不对我的要求进行回应，那么我保证您再也吃不到蛋糕了，而且可能会导致您收到我签发的月球单程票一份。&#xA;&#xA;怎么恢复我的蛋糕？&#xA;我们使用 CakeCoin 技术来接收款项，如果您不熟悉如何获取和使用 CakeCoin，请参考 idtp://cakecoin.celestia.ryl.eq/ 网站上的简介。&#xA;&#xA;如何付款？&#xA;请在 3 天之内向 [收付地址] 中显示的 CakeCoin 地址支付 1000 个以上的 CakeCoins，然后我会通过魔法将解锁密钥发送到您府上。请注意，不要试图搞什么小花样，乱输解锁密钥或者强制关闭这个程序可能会导致您收到我签发的月球单程票一份。" TextAlignment="Justify" TextWrapping="Wrap"/>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
